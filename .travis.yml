@@ -6,7 +6,7 @@ env:
   - CIBW_BUILD=cp3?-manylinux*
   - CIBW_MANYLINUX_X86_64_IMAGE=manylinux1
   - CIBW_MANYLINUX_I686_IMAGE=manylinux1
-  - CIBW_TEST_COMMAND="python -c 'import gamemode as gm;print(gm.query_status())'"
+  - CIBW_TEST_COMMAND="python {project}/test.py"
   # Note: TWINE_PASSWORD is set to an API token in Travis settings
 jobs:
   include:
