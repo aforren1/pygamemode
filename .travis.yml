@@ -1,0 +1,18 @@
+language: python
+os: linux
+env:
+  global:
+  - CIBW_SKIP=cp34-*
+  - CIBW_BUILD=cp3?-manylinux*
+  - CIBW_MANYLINUX_X86_64_IMAGE=manylinux1
+  - CIBW_MANYLINUX_I686_IMAGE=manylinux1
+  - CIBW_TEST_COMMAND="python -c 'import gamemode as gm;print(gm.query_status())'"
+  # Note: TWINE_PASSWORD is set to an API token in Travis settings
+jobs:
+  include:
+  - services: docker
+install:
+  - python -m pip install -U setuptools wheel twine cibuildwheel==1.1.0
+script:
+  - python -m cibuildwheel --output-dir ./wheelhouse
+  - ls wheelhouse
