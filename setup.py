@@ -8,7 +8,7 @@ with open(os.path.join(setup_directory, 'README.md')) as readme_file:
 
 setup(
     name='gamemode',
-    version='0.0.1',
+    version='0.0.2',
     description='A wrapper for the gamemode client API.',
     long_description=long_description,
     url='https://github.com/aforren1/pygamemode',
@@ -16,7 +16,7 @@ setup(
     author_email='aforren1@jhmi.edu',
     license='BSD 3',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Operating System :: POSIX :: Linux',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
@@ -24,6 +24,6 @@ setup(
         'Topic :: Multimedia :: Graphics',
         'Topic :: Scientific/Engineering :: Visualization',
     ],
-    ext_modules = [Extension('gamemode', ['gamemode.c'],
+    ext_modules = [Extension('gamemode', ['pygamemode.c'],
                    extra_compile_args=['-std=c99'])]
 )
