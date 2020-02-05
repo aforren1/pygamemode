@@ -4,4 +4,4 @@ A Python wrapper for the gamemode client API (https://github.com/FeralInteractiv
 
 To use this effectively, you'll need to install gamemode on your system. See either your system's package manager or the build instructions [here](https://github.com/FeralInteractive/gamemode/blob/master/README.md#development-).
 
-See "test.py" for example usage.
+See [test.py](https://github.com/aforren1/pygamemode/blob/master/test.py) for example usage.
