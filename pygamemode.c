@@ -78,6 +78,15 @@ static PyObject *query_status_for(PyObject *self, PyObject *args)
     return PyLong_FromLong(gamemode_query_status_for(pid));
 }
 
+PyDoc_STRVAR(error_string__doc__,
+             "string error_string() - Get an error string\n"
+             "    returns a string with more detailed error messages.");
+
+static PyObject *error_string(PyObject *self, PyObject *noargs)
+{
+    return PyUnicode_FromString(gamemode_error_string());
+}
+
 static PyMethodDef gamemode_meths[] = {
     {"request_start", request_start, METH_NOARGS, request_start__doc__},
     {"request_end", request_end, METH_NOARGS, request_end__doc__},
@@ -85,6 +94,7 @@ static PyMethodDef gamemode_meths[] = {
     {"request_start_for", request_start_for, METH_VARARGS, request_start_for__doc__},
     {"request_end_for", request_end_for, METH_VARARGS, request_end_for__doc__},
     {"query_status_for", query_status_for, METH_VARARGS, query_status_for__doc__},
+    {"error_string", error_string, METH_NOARGS, error_string__doc__},
     {NULL, NULL, 0, NULL}};
 
 static struct PyModuleDef gamemodemodule = {
