@@ -7,9 +7,9 @@ with open(os.path.join(setup_directory, 'README.md')) as readme_file:
     long_description = readme_file.read()
 
 setup(
-    name='gamemode',
-    version='0.0.2',
-    description='A wrapper for the gamemode client API.',
+    name='pygamemode',
+    version='0.0.3',
+    description='A Python wrapper for the gamemode client API.',
     long_description=long_description,
     url='https://github.com/aforren1/pygamemode',
     author='Alexander Forrence',
