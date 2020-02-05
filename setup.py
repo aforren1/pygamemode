@@ -24,5 +24,6 @@ setup(
         'Topic :: Multimedia :: Graphics',
         'Topic :: Scientific/Engineering :: Visualization',
     ],
-    ext_modules = [Extension('gamemode', ['gamemode.c'])]
+    ext_modules = [Extension('gamemode', ['gamemode.c'],
+                   extra_compile_args=['-std=c99'])]
 )
