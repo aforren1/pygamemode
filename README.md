@@ -12,7 +12,7 @@ import gamemode as gm
 res = gm.request_start()
 if res:
     msg = gm.error_string()
-    raise ValueError('gamemode failed to start. Detailed error message (if present): %s' % msg)
+    raise ValueError('gamemode failed to start. Detailed error message (if present): {}'.format(msg))
 
 # ...do things here...
 
