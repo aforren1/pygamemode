@@ -13,7 +13,7 @@ setup(
     long_description=long_description,
     url='https://github.com/aforren1/pygamemode',
     author='Alexander Forrence',
-    author_email='aforren1@jhmi.edu',
+    author_email='alex.forrence@gmail.com',
     license='BSD 3',
     classifiers=[
         'Development Status :: 4 - Beta',
