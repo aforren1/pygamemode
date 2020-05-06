@@ -9,14 +9,15 @@ Example usage:
 ```python
 import gamemode as gm
 
-res = gm.request_start()
-if res:
+if gm.request_start():
     msg = gm.error_string()
-    raise ValueError('gamemode failed to start. Detailed error message (if present): {}'.format(msg))
+    raise ValueError('Failed to request gamemode start: {}...'.format(msg))
 
 # ...do things here...
 
-gm.request_end()
+if gm.request_end():
+    msg = gm.error_string()
+    raise ValueError('Failed to request gamemode end: {}...'.format(msg))
 ```
 
 See [test.py](https://github.com/aforren1/pygamemode/blob/master/test.py) for all available calls.
