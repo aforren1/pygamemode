@@ -9,13 +9,13 @@ Example usage:
 ```python
 import gamemode as gm
 
-if gm.request_start():
+if gm.request_start() != 0:
     msg = gm.error_string()
     raise ValueError('Failed to request gamemode start: {}...'.format(msg))
 
 # ...do things here...
 
-if gm.request_end():
+if gm.request_end() != 0:
     msg = gm.error_string()
     raise ValueError('Failed to request gamemode end: {}...'.format(msg))
 ```
