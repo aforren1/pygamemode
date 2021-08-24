@@ -8,7 +8,7 @@ with open(os.path.join(setup_directory, 'README.md')) as readme_file:
 
 setup(
     name='pygamemode',
-    version='0.1.0',
+    version='0.1.1',
     description='A Python wrapper for the GameMode client API.',
     long_description=long_description,
     url='https://github.com/aforren1/pygamemode',
@@ -25,5 +25,6 @@ setup(
         'Topic :: Scientific/Engineering :: Visualization',
     ],
     ext_modules = [Extension('gamemode', ['pygamemode.c'],
-                   extra_compile_args=['-std=c99'])]
+                             extra_compile_args=['-std=c99', '-g0'],
+                             py_limited_api=True)]
 )
