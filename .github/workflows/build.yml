@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 env:
   CIBW_BUILD: cp36-*
+  CIBW_TEST_COMMAND: python {package}/test.py
 
 jobs:
   build_wheels:
