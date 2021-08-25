@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aforren1/pygamemode.svg?branch=master)](https://travis-ci.org/aforren1/pygamemode)
+[![Build](https://github.com/aforren1/pygamemode/actions/workflows/build.yml/badge.svg)](https://github.com/aforren1/pygamemode/actions/workflows/build.yml)
 
 A Python wrapper for the GameMode client API (https://github.com/FeralInteractive/gamemode).
 
