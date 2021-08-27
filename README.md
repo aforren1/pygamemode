@@ -1,3 +1,4 @@
+[![Latest PyPI Release](https://img.shields.io/pypi/v/pygamemode.svg)](https://pypi.org/project/pygamemode/)
 [![Build](https://github.com/aforren1/pygamemode/actions/workflows/build.yml/badge.svg)](https://github.com/aforren1/pygamemode/actions/workflows/build.yml)
 
 A Python wrapper for the GameMode client API (https://github.com/FeralInteractive/gamemode).
