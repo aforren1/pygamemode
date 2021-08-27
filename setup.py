@@ -11,6 +11,7 @@ setup(
     version='0.1.1',
     description='A Python wrapper for the GameMode client API.',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/aforren1/pygamemode',
     author='Alexander Forrence',
     author_email='alex.forrence@gmail.com',
