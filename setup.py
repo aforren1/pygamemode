@@ -8,7 +8,7 @@ with open(os.path.join(setup_directory, 'README.md')) as readme_file:
 
 setup(
     name='pygamemode',
-    version='0.1.1',
+    version='0.1.2a1',
     description='A Python wrapper for the GameMode client API.',
     long_description=long_description,
     long_description_content_type='text/markdown',
